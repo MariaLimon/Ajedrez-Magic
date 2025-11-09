@@ -62,6 +62,7 @@ public class OpcionesScript : MonoBehaviour
     }
     public void ChangeSlider(int valor)
     {
+        PlayerPrefs.SetInt("volumenAudio", sliderValue);
         sliderValue = valor;
         AudioListener.volume = slider.value;
     }

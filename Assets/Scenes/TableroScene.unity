@@ -119,6 +119,68 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &8906474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8906477}
+  - component: {fileID: 8906476}
+  - component: {fileID: 8906475}
+  m_Layer: 0
+  m_Name: TableroManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &8906475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8906474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f21263e54a39a74cb1909c6d32576c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8906476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8906474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e55b28c3bf0d0646bd5f6cfe9b9d052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CasillaPreFab: {fileID: 1924338662}
+  Ancho: 8
+  Alto: 8
+  Negro: {fileID: 2100000, guid: 42e90958595273e429809e3e5e245d20, type: 2}
+  Blanco: {fileID: 2100000, guid: f393951f54aeb02478d2abb8f8b90b65, type: 2}
+--- !u!4 &8906477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8906474}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 398.40097, y: 246.12314, z: 2.4062498}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +193,6 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
-  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -257,23 +318,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &330585548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e55b28c3bf0d0646bd5f6cfe9b9d052, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CasillaPreFab: {fileID: 1924338662}
-  Ancho: 8
-  Alto: 8
-  Negro: {fileID: 2100000, guid: 42e90958595273e429809e3e5e245d20, type: 2}
-  Blanco: {fileID: 2100000, guid: f393951f54aeb02478d2abb8f8b90b65, type: 2}
 --- !u!1 &396264449
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,7 +926,6 @@ GameObject:
   - component: {fileID: 1887737195}
   - component: {fileID: 1887737194}
   - component: {fileID: 1887737193}
-  - component: {fileID: 1887737192}
   m_Layer: 5
   m_Name: Crear casillas
   m_TagString: Untagged
@@ -910,23 +953,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1887737192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887737190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e55b28c3bf0d0646bd5f6cfe9b9d052, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CasillaPreFab: {fileID: 5383495698357734643, guid: 4b850f118b2b8614183814859885e1d2, type: 3}
-  Ancho: 5
-  Alto: 5
-  Negro: {fileID: 0}
-  Blanco: {fileID: 0}
 --- !u!114 &1887737193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -971,7 +997,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 330585548}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CrearCasillas, Assembly-CSharp
         m_MethodName: Crear
         m_Mode: 1
@@ -1094,3 +1120,4 @@ SceneRoots:
   - {fileID: 1285090182}
   - {fileID: 396264452}
   - {fileID: 484414757}
+  - {fileID: 8906477}
