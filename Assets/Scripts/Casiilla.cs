@@ -3,11 +3,14 @@ using UnityEngine;
 public class Casiilla : MonoBehaviour
 {
     public Material colorCasilla;
-    public int NumCasilla=1;
+    public int NumCasilla = 1;
+    
+    public Vector2Int coordenada;
 
     void OnMouseDown()
     {
-        print(NumCasilla.ToString());
+        print("Clic en casilla: " + coordenada);
+        GameManager.instance.IntentarMoverA(this.gameObject);
     }
     
     public void PonerColor(Material Color_)
