@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Casiilla.cs" />
     <Compile Include="Assets\Scripts\CrearCasillas.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\ComoJugarScript.cs" />
     <Compile Include="Assets\Scripts\Pieza.cs" />
   </ItemGroup>
   <ItemGroup>
