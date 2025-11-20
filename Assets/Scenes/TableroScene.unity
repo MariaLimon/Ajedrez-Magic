@@ -195,18 +195,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d95648efbaec6547b5ea06be5039203, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  peonBlancoPrefab: {fileID: 919132149155446097, guid: 88202ce0c4a290d4d96147b669e22b27, type: 3}
-  peonNegroPrefab: {fileID: 919132149155446097, guid: 983fd189aee826044b46e35ecec33305, type: 3}
-  torreBlancaPrefab: {fileID: 919132149155446097, guid: fbd0db7db2faf0e42b2a5012d7ff307b, type: 3}
-  torreNegraPrefab: {fileID: 919132149155446097, guid: a0cd766429405d84e8f56097a8ed84df, type: 3}
-  caballoBlancoPrefab: {fileID: 919132149155446097, guid: aaa14a19675b53b40a1a4c6006154b05, type: 3}
-  caballoNegroPrefab: {fileID: 919132149155446097, guid: 21da6dcc5deeb994c8f847c9d6476701, type: 3}
-  alfilBlancoPrefab: {fileID: 919132149155446097, guid: 5e24305aafe7d364a87d09e2e2ffd090, type: 3}
-  alfilNegroPrefab: {fileID: 919132149155446097, guid: 58ecedcfe05162b49880fa112ff0cbc5, type: 3}
-  reinaBlancaPrefab: {fileID: 919132149155446097, guid: 80f67f01afc5a0249a8d80b94bd1b785, type: 3}
-  reinaNegraPrefab: {fileID: 919132149155446097, guid: 06da658c0b7addb449d8ed50b035c77f, type: 3}
-  reyBlancoPrefab: {fileID: 919132149155446097, guid: fab8e5a5e19c03a4b8a0c578df70f954, type: 3}
-  reyNegroPrefab: {fileID: 919132149155446097, guid: eb6fe264ea81275478092cbe7651fca9, type: 3}
+  peonPrefab: {fileID: 919132149155446097, guid: 983fd189aee826044b46e35ecec33305, type: 3}
+  torrePrefab: {fileID: 919132149155446097, guid: a0cd766429405d84e8f56097a8ed84df, type: 3}
+  caballoPrefab: {fileID: 919132149155446097, guid: 21da6dcc5deeb994c8f847c9d6476701, type: 3}
+  alfilPrefab: {fileID: 919132149155446097, guid: 58ecedcfe05162b49880fa112ff0cbc5, type: 3}
+  reinaPrefab: {fileID: 919132149155446097, guid: 06da658c0b7addb449d8ed50b035c77f, type: 3}
+  reyPrefab: {fileID: 919132149155446097, guid: eb6fe264ea81275478092cbe7651fca9, type: 3}
+  materialBlanco: {fileID: 2100000, guid: f393951f54aeb02478d2abb8f8b90b65, type: 2}
+  materialNegro: {fileID: 2100000, guid: 42e90958595273e429809e3e5e245d20, type: 2}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,6 +1341,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6e925da7b2c43e4eb942cd6bbaa48d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialCasillaIluminada: {fileID: 2100000, guid: 3e0e3796fef9bfe48ac38c035273901c, type: 2}
+  materialCasillaCaptura: {fileID: 2100000, guid: 0e719cdee64e739448807208798e52ae, type: 2}
 --- !u!4 &1341089831
 Transform:
   m_ObjectHideFlags: 0
@@ -1510,6 +1508,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5383495698357734643, guid: 4b850f118b2b8614183814859885e1d2, type: 3}
   m_PrefabInstance: {fileID: 9179085288042515685}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1924338668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924338662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 605b790a38616894eac2f19fcc9f2d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorCasilla: {fileID: 2100000, guid: 42e90958595273e429809e3e5e245d20, type: 2}
+  coordenada: {x: 0, y: 0}
 --- !u!1001 &9179085288042515685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1518,6 +1530,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2858594551613124357, guid: 4b850f118b2b8614183814859885e1d2, type: 3}
+      propertyPath: colorCasilla
+      value: 
+      objectReference: {fileID: 2100000, guid: 42e90958595273e429809e3e5e245d20, type: 2}
     - target: {fileID: 5383495698357734643, guid: 4b850f118b2b8614183814859885e1d2, type: 3}
       propertyPath: m_Name
       value: Casilla
@@ -1574,10 +1590,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2858594551613124357, guid: 4b850f118b2b8614183814859885e1d2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5383495698357734643, guid: 4b850f118b2b8614183814859885e1d2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1924338668}
   m_SourcePrefab: {fileID: 100100000, guid: 4b850f118b2b8614183814859885e1d2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
