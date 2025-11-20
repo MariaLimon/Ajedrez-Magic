@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\InicializadorPiezas.cs" />
+    <Compile Include="Assets\Starfield Skybox\Demo\Script\LookCamera.cs" />
     <Compile Include="Assets\Scripts\ControladorNiveles.cs" />
     <Compile Include="Assets\Scripts\NivelesScript.cs" />
     <Compile Include="Assets\Scripts\OpcionesScript.cs" />
